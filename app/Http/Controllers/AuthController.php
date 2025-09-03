@@ -19,6 +19,9 @@ class AuthController extends Controller
           return view('auth.login');
     }
 
+    public function LoginUser(){
+              return User::login();
+    }
     public function Signup(SignupRequest $request){
           if(request()->isMethod('POST')){
               return User::Signup();

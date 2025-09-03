@@ -9,6 +9,8 @@ use App\Http\Controllers\CompanyController;
 use Illuminate\Auth\Events\Logout;
 
 Route::any('/' ,[AuthController::class , 'Login'])->name('login');
+Route::post('login_user' ,[AuthController::class , 'LoginUser'])->name('login_user');
+
 Route::any('/signup' ,[AuthController::class ,'Signup'])->name('signup');
 
 Route::middleware('auth')->group(function(){
@@ -19,7 +21,10 @@ Route::group(['prefix' => 'hub_details'], function () {
     Route::post('/companies' ,[HubController::class , 'Companies'])->name('hub_details.companies'); 
 });
 
-Route::get('reports' ,[ReportsController::class ,'Reports'])->name('reports');
+Route::get('reports/{slug?}' ,[ReportsController::class ,'Reports'])->name('reports');
+  Route::group(['prefix'=>'reports_details'] ,function(){
+      Route::get('contents' , [ReportsController::class ,'Contents'])->name('report_details.contents');
+  });
 
 Route::get('companies' ,[CompanyController::class ,'Companies'])->name('companies');
 

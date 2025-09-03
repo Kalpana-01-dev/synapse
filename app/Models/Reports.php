@@ -65,4 +65,86 @@ class Reports extends Model
         ];
         return $data;
     }
+
+
+    public static function GetreportList(){
+        $name= "Test name"; 
+           $data = [
+            [
+
+                'id' => 1,
+                'slug' => 'report-1',
+                'name' => 'SAUDI ARABIA SEALANTS MARKET SIZE & SHARE ANALYSIS - GROWTH TRENDS & FORECASTS UP TO 2028',
+                'hub' => $name,
+                'publish_date' => '2022-11-07',
+                'study_period' => '2017-2028',
+                'format' => 'pdf,excel',
+                'country_covered' => 'India,Saudia Arbai',
+                'img' => 'https://s3.mordorintelligence.com/CP/logo_1707916753069.png',
+            ],
+
+            [
+                'id' => 2,
+                'slug' => 'report-2',
+                'name' => 'SAUDI ARABIA SEALANTS MARKET SIZE & SHARE ANALYSIS - GROWTH TRENDS & FORECASTS UP TO 2028',
+                'hub' => $name,
+                'publish_date' => '2022-11-07',
+                'study_period' => '2017-2028',
+                'format' => 'pdf,excel',
+                'country_covered' => 'India,Saudia Arbai',
+                'img' => 'https://s3.mordorintelligence.com/CP/logo_1707916753069.png',
+            ],
+
+            [
+                'id' => 3,
+                'slug' => 'report-3',
+                'name' => 'SAUDI ARABIA SEALANTS MARKET SIZE & SHARE ANALYSIS - GROWTH TRENDS & FORECASTS UP TO 2028',
+                'hub' => $name,
+                'publish_date' => '2024-11-07',
+                'study_period' => '2017-2028',
+                'format' => 'pdf,excel',
+                'country_covered' => 'India,Saudia Arbai',
+                'img' => 'https://s3.mordorintelligence.com/CP/logo_1707916753069.png',
+            ],
+
+            [
+                'id' => 4,
+                'slug' => 'report-4',
+                'name' => 'EVA ADHESIVES MARKET SIZE & SHARE ANALYSIS - GROWTH TRENDS & FORECASTS UP TO 2028',
+                'hub' => $name,
+                'publish_date' => '2024-11-07',
+                'study_period' => '2017-2028',
+                'format' => 'pdf,excel',
+                'country_covered' => 'India,Saudia Arbai',
+                'img' => 'https://s3.mordorintelligence.com/CP/logo_1707916753069.png',
+            ],
+
+
+            [
+                'id' => 5,
+                'slug' => 'report-5',
+                'name' => 'ASIA-PACIFIC EVA ADHESIVES MARKET SIZE & SHARE ANALYSIS - GROWTH TRENDS & FORECASTS UP TO 2028',
+                'hub' => $name,
+                'publish_date' => '2024-11-07',
+                'study_period' => '2017-2028',
+                'format' => 'pdf,excel',
+                'country_covered' => 'India,Saudia Arbai',
+                'img' => 'https://s3.mordorintelligence.com/CP/logo_1707916753069.png',
+            ]
+        ];
+
+        return $data ; 
+    }
+
+
+    public static function GetReportDetails(){
+           $slug  = request()->slug; 
+           return collect(Reports::GetreportList())
+            ->firstWhere('slug', $slug)['name'] ?? null;
+    }
+
+    public static function GetReportContents(){
+          $contents = []; 
+          return $contents; 
+    }
 }

@@ -40,7 +40,7 @@
                         <div class="innerContent">
                             <h4 class="lSize ">Log in to Synapse</h4>
 
-                            <form class="LoginForm"   action="{{request()->url()}}" method="post"> 
+                            <form class="LoginForm"   action="{{route('login_user')}}" method="POST"> 
                                     @csrf
                                 <div class="mb-3">
                                     <input type="email" class="form-control" id="email" name="email" placeholder="Email address"  value="{{old('email')}}"
