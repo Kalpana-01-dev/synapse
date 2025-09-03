@@ -1,0 +1,241 @@
+ @media (min-width: 820px) {}
+
+ /* Extra Large (Large Desktops / 4K) */
+ @media (max-width: 1300px) {
+     .homeDashboard .profile img {
+         width: 10vw;
+         height: 10vw;
+     }
+
+     .homeDashboard .dashboardProfile .profile {
+         padding: 30px 15px;
+     }
+
+     .homeDashboard .leftSide .upper .themeColor {
+         font-size: var(--mmSize);
+     }
+
+     .homeDashboard .leftSide .grid3 {
+         gap: 0;
+
+     }
+
+     .homeDashboard .leftSide .grid3 .address {
+         grid-column: span 3;
+     }
+
+
+
+     .homeDashboard .leftSide .upper {
+         margin-bottom: 8px;
+     }
+
+     .homeDashboard .pointsSec .box {
+         height: 100%;
+         display: flex;
+         align-content: center;
+         justify-content: center;
+     }
+
+     .sidebar {
+
+         padding: 8.5vw 1.5rem;
+     }
+
+     .sidebar.collapsed {
+         padding: 7.5vw 0.5rem;
+     }
+ }
+
+
+ /* Medium (Small Desktops) */
+ @media (max-width: 1024px) {
+     .homeDashboard .dashboardProfile {
+         grid-template-columns: 65vh auto;
+     }
+
+     .homeDashboard .dashboardProfile .profile {
+         grid-template-columns: auto auto;
+     }
+
+     .homeDashboard .dashboardProfile .profile .my-auto {
+
+         margin-bottom: auto;
+     }
+
+     .sidebar.collapsed {
+         padding: 9.5vw 0.5rem;
+     }
+
+     .sidebar {
+         padding: 10.5vw 1.5rem;
+     }
+ }
+
+
+ /* Small (Desktop) */
+ @media (max-width: 920px) {
+     .header {
+         left: 0;
+     }
+
+     .homeDashboard .dashboardProfile {
+         grid-template-columns: auto auto;
+     }
+
+     .homeDashboard .dashboardProfile .profile {
+         grid-template-columns: auto;
+     }
+
+     .homeDashboard .profile img {
+         width: 7vw;
+         height: 7vw;
+     }
+ }
+
+
+ /* Small (Tablets) */
+ @media (max-width: 785px) {
+     .homeDashboard .dashboardProfile {
+         grid-template-columns: 45vw auto;
+         gap: 1vw;
+     }
+
+     .homeDashboard .dashboardProfile .profile {
+         padding: 15px 15px;
+     }
+
+     .homeDashboard .pointsSec ul {
+         padding-left: 5px;
+     }
+
+     .homeDashboard .pointsSec .themeColor {
+         text-align: left;
+     }
+
+     .sidebar {
+         padding: 13.5vw 1.5rem;
+     }
+
+     .sidebar.collapsed {
+         padding: 12.5vw 0.5rem;
+     }
+ }
+
+
+
+
+
+ /* Small (Mobiles) */
+
+ @media (max-width: 620px) {
+     .homeDashboard .dashboardProfile {
+         grid-template-columns: 1fr;
+         gap: 20px;
+     }
+
+     .sidebar.collapsed {
+         padding: 25.5vw 0.5rem;
+     }
+
+     .sidebar {
+         padding: 0;
+         width: 0;
+     }
+
+     .homeDashboard .pointsSec .box {
+         padding: 5vw;
+     }
+
+     .innerSidebar .menu h6 {
+         display: none;
+     }
+
+     .header {
+         padding: 2vw;
+         width: 100%;
+     }
+
+     .toggle-btn {
+         margin-right: 2vw;
+
+     }
+
+     .homeDashboard .leftSide .grid3 {
+         gap: 0;
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .innerMainContent {
+         padding: 10px 4vw;
+     }
+
+     .orderHistory table th {
+         white-space: pre;
+     }
+
+     .orderHistory .orderHistoryHeader h5,
+     .orderHistory .orderHistoryHeader a {
+         white-space: nowrap;
+         padding: 0 2vw 0 2vw !important;
+     }
+
+     .orderHistory .orderHistoryHeader a {
+         padding: 0 0 0 2vw !important;
+     }
+
+     .homeDashboard .orderHistoryHeader {
+         padding: 10px;
+     }
+
+     .WalletHistory .transactionTable {
+         padding: 3vw;
+     }
+
+     .WalletHistory .transactionTable .grid5 {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .WalletHistory .innerMainContent {
+         margin: auto !important;
+         padding: 2vw !important;
+     }
+
+     .WalletHistory .upperHeroSection .box {
+         padding: 8vw;
+     }
+
+     .row {
+         margin: auto !important;
+     }
+
+     .row.WalletHistory {
+         padding: 0;
+     }
+
+     .WalletHistory .historyItems {
+         padding: 10vw 4vw 4vw 4vw;
+         position: relative;
+     }
+
+     .WalletHistory .historyItems .status {
+         position: absolute;
+         left: 2vw;
+         top: 4vw;
+         border: 1px dotted;
+     }
+
+     .WalletHistory .historyItems h6 {
+         font-size: 14px;
+         white-space: nowrap;
+     }
+
+     .WalletHistory .upperHeroSection .box .blueBtn {
+         width: 50vw;
+
+     }
+
+     .col-md-12.mt-3 {
+         padding: 0;
+     }
+ }

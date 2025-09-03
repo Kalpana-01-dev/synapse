@@ -1,0 +1,594 @@
+/* Inter FONT FAMILY  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Inter FONT FAMILY  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+}
+
+:root {
+    --lightBlueBg: #FAFAFA;
+    --themeColor: #274183;
+    --grey: #333333;
+    --grey2: #444444;
+    --lGrey: #B1B1B1;
+    --black: #111111;
+    --black2: #000;
+    --lightRadius: 4px;
+    --xSize: 14px;
+    --xxSize: 13px;
+    --sSize: 16px;
+    --mSize: 20px;
+    --lSize: 23px;
+    --XLSize: 23px;
+    --lBlue: #4A90E2;
+    --fw4: 400;
+    --fw5: 500;
+    --fw6: 600;
+
+   
+}
+
+
+
+/*===================================
+ DEFAULTS 
+ ======================================*/
+a {
+    text-decoration: none !important;
+
+}
+
+
+
+.hr {
+    margin: 30px auto;
+    width: 100%;
+    border: 1px solid #DDDDDD
+}
+
+.black2 {
+    color: var(--black2) !important;
+}
+
+.border-none {
+    border: none;
+}
+
+img {
+    width: 100%;
+}
+
+.bg-none {
+    background: none !important;
+}
+
+.grid2,
+.grid3,
+.grid4,
+.grid5 {
+    display: grid;
+    gap: 30px;
+
+}
+
+.grid3 {
+
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.grid4 {
+
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.grid5 {
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.grid2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.btn {
+    font-size: var(--xSize) !important;
+}
+
+.iconImg {
+    width: 30px;
+}
+
+th {
+    font-weight: 400;
+    color: #252525;
+    font-size: var(--xSize);
+    background: #F4F5F9 !important;
+    vertical-align: middle;
+}
+
+td {
+    font-weight: 400;
+    color: #252525 !important;
+    vertical-align: middle;
+    font-size: var(--xxSize);
+}
+
+.icons {
+    width: 15px;
+}
+
+
+/*===================================
+ DEFAULTS 
+ ======================================*/
+
+
+
+
+
+
+/*====================================
+ SIZES
+ ======================================*/
+.lSize {
+    font-size: 24px;
+    color: var(--grey);
+}
+
+.XLSize {
+    font-size: var(--XLSize);
+    font-weight: 600;
+}
+
+.xxSize {
+    font-size: var(--xxSize);
+}
+.mxSize {
+    font-size: var(--mxSize);
+}
+
+.xSize {
+    font-size: var(--xSize);
+}
+
+.sSize {
+    font-size: var(--sSize);
+}
+
+.fw5 {
+    font-weight: 500;
+}
+
+/*====================================
+ SIZES
+ ======================================*/
+
+
+
+/*===================================
+ COLORS 
+ ======================================*/
+.grey {
+    color: var(--grey);
+}
+
+.themebg {
+    background: var(--themeColor) !important;
+}
+
+.lGrey {
+    color: var(--lGrey);
+}
+
+.grey2 {
+    color: var(--grey2);
+}
+
+.black {
+    color: var(--black);
+}
+
+.themeColor {
+    color: var(--themeColor) !important;
+}
+
+.lightBlueBg {
+    background: #FAFAFA;
+}
+
+.lBlue {
+    color: var(--lBlue) !important;
+    font-weight: 500;
+}
+
+.status {
+    font-size: var(--xSize);
+    margin: auto 0;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.Pending {
+    color: #FFC107;
+    background: #FFC1070D;
+}
+
+.shipped {
+    color: #007BFF;
+    background: #007BFF0D;
+
+}
+
+.delivered {
+    color: #28A745;
+    background: #28A7450D;
+
+
+}
+
+/*===================================
+ COLORS 
+ ======================================*/
+
+
+
+
+
+
+
+/*===================================
+ WEB HEADER
+ ======================================*/
+
+.webHeader {
+    padding: 1.5rem !important;
+}
+
+.webHeader .brandLogo {
+    width: 9rem;
+}
+
+.webHeader .header-links ul {
+    display: flex;
+    align-content: center;
+    gap: 70px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.webHeader .header-links ul li {
+    list-style: none;
+    position: relative;
+    color: #777;
+}
+
+.webHeader .header-links ul li a {
+    color: #777;
+}
+
+.webHeader .header-links ul .active a {
+    color: #000000 !important;
+    font-weight: 500;
+}
+
+.webHeader .header-links ul .span::after {
+    content: '';
+    position: absolute;
+    right: -55px;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background: #000000;
+}
+
+/*===================================
+ WEB HEADER
+ ======================================*/
+
+
+
+
+
+
+
+
+/*===================================
+PAGE BANNER
+ ======================================*/
+.pageBanner {
+    background: url('../../assets/images/default/pageBanner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25vh;
+}
+
+.pageBanerTitle {
+    font-size: var(--XLSize);
+    color: #FFF;
+    font-style: italic;
+
+}
+
+/*===================================
+PAGE BANNER
+ ======================================*/
+
+
+
+
+
+
+
+
+/*===================================
+PAGE LOCATIONS
+ ======================================*/
+.pageLocation {
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.pageLocation a {
+    color: #777777;
+    font-weight: 400;
+    font-size: var(--xSize);
+}
+
+/*===================================
+PAGE LOCATIONS
+ ======================================*/
+
+
+
+
+
+
+
+/*===================================
+ BUTTONS 
+ ======================================*/
+
+.btn {
+    width: 100%;
+}
+
+.blueBtn {
+    background: #274183 !important;
+    color: #FFF !important;
+    border-radius: 0 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.blueBtn figure {
+    margin: 0;
+}
+
+.blackBtn {
+    border: 1px solid #000000;
+    background: #000000 !important;
+    color: #FFF !important;
+    border-radius: 2px !important;
+}
+
+.blueBorderBtn {
+    background: #FFF;
+    color: #274183;
+    border-radius: 0 !important;
+    border: 1px solid #274183 !important;
+}
+
+/*===================================
+ BUTTONS 
+ ======================================*/
+
+
+
+
+
+/*===================================
+ FORMS 
+ ======================================*/
+
+input {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px !important;
+    background: #FAFAFA !important;
+    font-size: var(--xSize) !important;
+}
+
+.sorting .form-control {
+    border: none;
+    background: no-repeat;
+    width: 200px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.form-label,
+.form-text {
+    color: var(--grey);
+    font-size: var(--xSize);
+}
+
+/*===================================
+ FORMS 
+ ======================================*/
+
+
+
+
+
+
+/*===================================
+ MODALS 
+ ======================================*/
+/* shoppingCartModal */
+#shoppingCartModal .cartBagItems .grid2 {
+    grid-template-columns: 100px auto;
+}
+
+#shoppingCartModal .cartBagItems .productFigure {
+    background: #EEEEEE;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+}
+
+#shoppingCartModal .cartBagItems .productFigure img {
+    object-fit: cover;
+}
+
+#shoppingCartModal .modal-dialog {
+    margin: 80px 8vw 0px auto;
+}
+
+#shoppingCartModal .modal-content {
+    max-width: 25vw;
+}
+
+#shoppingCartModal .cartBagItems {
+    padding: 15px 0;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+#shoppingCartModal .productName {
+    color: var(--grey);
+}
+
+#shoppingCartModal .modal-body {
+    min-height: 50vh;
+    max-height: 50vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+}
+
+#shoppingCartModal .cartDetails button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+
+}
+
+/* shoppingCartModal */
+
+/* uploadLogoModal */
+#uploadLogoModal .productFigure {
+    background: #D9D9D9;
+    width: 75px;
+    padding: 10px;
+}
+
+#uploadLogoModal .modal-dialog {
+    min-width: 50vw;
+}
+
+#uploadLogoModal .modal-body {
+    border: 1px solid #DDDDDD;
+    margin: 5px 20px;
+    border-radius: 4px;
+    padding: 0;
+
+}
+
+#uploadLogoModal .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+#uploadLogoModal .upload-btn-wrapper button {
+    box-shadow: 0px 0px 4px 0px #0000002E;
+    border: 1px solid #DDDDDD;
+    width: 100%;
+    color: #FFF;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+#uploadLogoModal .upload-btn-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#uploadLogoModal .itemsDetails {
+    padding: 15px;
+}
+
+#uploadLogoModal .note {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px 0;
+    background: #F9F9F9;
+}
+
+#uploadLogoModal .modal-header {
+    border-bottom: 0 !important;
+}
+
+#uploadLogoModal .modal-footer {
+    border-top: 0 !important;
+}
+
+/* uploadLogoModal */
+
+
+/* changeAddressModal */
+/*===================================
+ MODALS 
+ ======================================*/
+
+
+
+
+
+/*===================================
+ SIMILAR PRODUCTS 
+ ======================================*/
+.similarProducts {
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.similarProducts figure {
+    background: #EEEEEE;
+    padding: 20px;
+}
+
+.similarProducts figure img {
+    width: 100%;
+    height: 200px;
+}
+
+.w-99{
+     width: 99% !important;
+}
