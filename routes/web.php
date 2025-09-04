@@ -23,7 +23,11 @@ Route::group(['prefix' => 'hub_details'], function () {
 
 Route::get('reports/{slug?}' ,[ReportsController::class ,'Reports'])->name('reports');
   Route::group(['prefix'=>'reports_details'] ,function(){
-      Route::get('contents' , [ReportsController::class ,'Contents'])->name('report_details.contents');
+      Route::post('contents' , [ReportsController::class ,'ReportContents'])->name('report_details.contents');
+      Route::post('dashboard' , [ReportsController::class ,'ReportDashbord'])->name('report_details.dashboard');
+      Route::post('execution_summary' , [ReportsController::class ,'ExecutionSummary'])->name('report_details.execution_summary');
+      Route::post('report_pdf' ,[ReportsController::class ,'ReportPdf'])->name('report_details.report_pdf');
+      Route::post('data_sheet' ,[ReportsController::class ,'DataSheet'])->name('report_details.data_sheet');
   });
 
 Route::get('companies' ,[CompanyController::class ,'Companies'])->name('companies');
