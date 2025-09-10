@@ -93,13 +93,25 @@
 </body>
 
 <script>
+ $(document).ready(function(){
+  let ele = $('.navitems.active'); 
+  let type = ele.data('type');
+  let href = ele.attr('href');
+  let slug = ele.data('slug');
+  GetAjaxDetails(href , type ,slug);
+
+ });
+
 $(document).on('click' ,'.navitems' ,function(event){
     event.preventDefault();
    let type = $(this).data('type');
    let href = $(this).attr('href');
    let slug = $(this).data('slug');
-   console.log(href);
-   $.ajax({
+    GetAjaxDetails(href , type ,slug);
+});
+
+function GetAjaxDetails(href , type ,  slug){
+      $.ajax({
     url: href,  // Laravel route
     type: "POST",
     dataType:'json',
@@ -115,9 +127,7 @@ $(document).on('click' ,'.navitems' ,function(event){
         console.log("Error:", xhr.responseText);
     }
 });
-
-
-});
+}
 
 </script>
 </html>

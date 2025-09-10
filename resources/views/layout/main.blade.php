@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home ( JOG )</title>
+    <title>Synapse</title>
 
     <!-- Include Css -->
     <link rel="stylesheet" href="{{asset('assets/css/main/default.css')}}">
@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="{{asset('assets/css/main/dashboardResponsive.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/main/responsive.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/main/header.css')}}">
+
+    <link rel="stylesheet" href="{{asset('assets/css/companies.css')}}">
+
     <!-- Include Css -->
 
     <link rel="icon" type="image/x-icon" href="../assets/images/logo/feviconIcon.png">

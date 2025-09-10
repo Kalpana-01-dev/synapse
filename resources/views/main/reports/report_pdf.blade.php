@@ -1,5 +1,5 @@
 <div class="container">
-<iframe src="{{ asset('assets/upload/report/Report_Japan Processed Meat Market.pdf') }}" 
+<iframe src="{{ asset($path) }}" 
         width="100%" 
         height="600px" 
         style="border: none;">

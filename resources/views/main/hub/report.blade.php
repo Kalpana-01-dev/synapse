@@ -1,4 +1,4 @@
-<div class="container-fluid py-4">
+<div class="container py-4">
     <div class="row">
         <!-- Sidebar -->
         <div class="col-md-3">
@@ -78,7 +78,7 @@
             @foreach($hubReport as $key=>$val)
             <!-- Report Card -->
             <div class="report-card">
-                <h6>{{$val['name']}}</h6>
+                <a href="#">{{$val['name']}}</a>
                 <span class="hub-badge">Hub: {{$val['hub']}}</span>
                 <ul class="list-unstyled mt-2 mb-2">
                     <li><strong>Published Date:</strong> {{date('d M Y ' ,strtotime($val['publish_date']))}}</li>

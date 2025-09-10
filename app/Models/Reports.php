@@ -101,7 +101,7 @@ class Reports extends Model
 
             [
                 'id' => 3,
-                'slug' => 'report-3',
+                'slug' => '#',
                 'name' => 'SAUDI ARABIA SEALANTS MARKET SIZE & SHARE ANALYSIS - GROWTH TRENDS & FORECASTS UP TO 2028',
                 'hub' => $name,
                 'publish_date' => '2024-11-07',
@@ -113,7 +113,7 @@ class Reports extends Model
 
             [
                 'id' => 4,
-                'slug' => 'report-4',
+                'slug' => '#',
                 'name' => 'EVA ADHESIVES MARKET SIZE & SHARE ANALYSIS - GROWTH TRENDS & FORECASTS UP TO 2028',
                 'hub' => $name,
                 'publish_date' => '2024-11-07',
@@ -126,7 +126,7 @@ class Reports extends Model
 
             [
                 'id' => 5,
-                'slug' => 'report-5',
+                'slug' => '#',
                 'name' => 'ASIA-PACIFIC EVA ADHESIVES MARKET SIZE & SHARE ANALYSIS - GROWTH TRENDS & FORECASTS UP TO 2028',
                 'hub' => $name,
                 'publish_date' => '2024-11-07',
@@ -942,38 +942,82 @@ class Reports extends Model
 
     public static function GetDashboardData()
     {      
-        $data = [
-            [
-                'title' => 'Sports Apparel Market (Specialty Stores, 2019-2029)',
-                'type' => 'bar', // chart type
-                'data' => [
-                    ['year' => 2019, 'value' => 109.96],
-                    ['year' => 2020, 'value' => 93.78],
-                    ['year' => 2021, 'value' => 113.58],
-                    ['year' => 2022, 'value' => 127.26],
-                    ['year' => 2023, 'value' => 138.67],
-                    ['year' => 2024, 'value' => 150.36],
-                    ['year' => 2029, 'value' => 209.15],
-                ]
-            ],
-            [
-                'title' => 'Sports Apparel Market (Men, 2019-2029)',
-                'type' => 'pie', // chart type
-                'data' => [
-                    ['year' => 2019, 'value' => 109.75],
-                    ['year' => 2020, 'value' => 96.91],
-                    ['year' => 2021, 'value' => 112.24],
-                    ['year' => 2022, 'value' => 125.14],
-                    ['year' => 2023, 'value' => 135.69],
-                    ['year' => 2024, 'value' => 146.39],
-                    ['year' => 2029, 'value' => 198.57],
-                ]
-            ]
-        ];
 
+        $slug = request()->id ; 
+        
+        if($slug=='report-1'):
+            $data = [
+                [
+                    'title' => 'Sports Apparel Market (Specialty Stores, 2019-2029)',
+                    'type' => 'bar', // chart type
+                    'data' => [
+                        ['year' => 2019, 'value' => 109.96],
+                        ['year' => 2020, 'value' => 93.78],
+                        ['year' => 2021, 'value' => 113.58],
+                        ['year' => 2022, 'value' => 127.26],
+                        ['year' => 2023, 'value' => 138.67],
+                        ['year' => 2024, 'value' => 150.36],
+                        ['year' => 2029, 'value' => 209.15],
+                    ]
+                ],
+                [
+                    'title' => 'Sports Apparel Market (Men, 2019-2029)',
+                    'type' => 'pie', // chart type
+                    'data' => [
+                        ['year' => 2019, 'value' => 109.75],
+                        ['year' => 2020, 'value' => 96.91],
+                        ['year' => 2021, 'value' => 112.24],
+                        ['year' => 2022, 'value' => 125.14],
+                        ['year' => 2023, 'value' => 135.69],
+                        ['year' => 2024, 'value' => 146.39],
+                        ['year' => 2029, 'value' => 198.57],
+                    ]
+                ]
+            ];
+        else:
+               $data = [
+                [
+                    'title' => 'New data ',
+                    'type' => 'bar', // chart type
+                    'data' => [
+                        ['year' => 2019, 'value' => 109.96],
+                        ['year' => 2020, 'value' => 93.78],
+                        ['year' => 2021, 'value' => 113.58],
+                        ['year' => 2022, 'value' => 127.26],
+                        ['year' => 2023, 'value' => 138.67],
+                        ['year' => 2024, 'value' => 150.36],
+                        ['year' => 2029, 'value' => 209.15],
+                    ]
+                ],
+                [
+                    'title' => 'New data 2',
+                    'type' => 'pie', // chart type
+                    'data' => [
+                        ['year' => 2019, 'value' => 109.75],
+                        ['year' => 2020, 'value' => 96.91],
+                        ['year' => 2021, 'value' => 112.24],
+                        ['year' => 2022, 'value' => 125.14],
+                        ['year' => 2023, 'value' => 135.69],
+                        ['year' => 2024, 'value' => 146.39],
+                        ['year' => 2029, 'value' => 198.57],
+                    ]
+                ]
+            ];
+        endif; 
         return $data;
     }
 
+
+    public static function GetPdfPath(){
+         $slug = request()->id; 
+         $path = '';
+         if($slug=='report-1'){
+             $path = "assets/upload/report/Report_Japan Processed Meat Market.pdf"; 
+         }elseif($slug=='report-2'){
+            $path = "assets/upload/report/Report_Global Automobile Testing Services Market.pdf";
+         }
+         return $path; 
+     }
     public static function ExecutionSummary()
     {
          $slug = request()->id ; 

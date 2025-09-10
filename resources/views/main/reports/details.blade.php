@@ -62,9 +62,9 @@
                     <a class="nav-link report_detail" data-id="{{$id}}"  href="{{route('report_details.report_pdf')}}">Reports </a>
                 </li>
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link report_detail" href="{{route('report_details.data_sheet')}}">Data Sheet </a>
-                </li>
+                </li> -->
             </ul>
 
 

@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Reports;
 use App\Models\Hub;
-
-
+use SebastianBergmann\CodeCoverage\Report\Xml\Report;
 
 class ReportsController extends Controller
 {
@@ -55,7 +54,8 @@ class ReportsController extends Controller
     }
 
     public function ReportPdf(){
-        $html = view('main.reports.report_pdf')->render(); 
+       $path = Reports::GetPdfPath();
+        $html = view('main.reports.report_pdf' ,compact('path'))->render(); 
           return response()->json([
               'html' =>$html , 
               'msg' => 'Data found'
