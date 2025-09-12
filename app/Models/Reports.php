@@ -948,58 +948,56 @@ class Reports extends Model
         if($slug=='report-1'):
             $data = [
                 [
-                    'title' => 'Sports Apparel Market (Specialty Stores, 2019-2029)',
+                    'title' => 'Factors Influencing Purchasing Decisions',
                     'type' => 'bar', // chart type
                     'data' => [
-                        ['year' => 2019, 'value' => 109.96],
-                        ['year' => 2020, 'value' => 93.78],
-                        ['year' => 2021, 'value' => 113.58],
-                        ['year' => 2022, 'value' => 127.26],
-                        ['year' => 2023, 'value' => 138.67],
-                        ['year' => 2024, 'value' => 150.36],
-                        ['year' => 2029, 'value' => 209.15],
+                        ['year' => 'Others', 'value' => 5],
+                        ['year' => 'Ingredient Safety & Sustainability', 'value' => 7],
+                        ['year' => 'Social Influence & Reviews', 'value' => 8],
+                        ['year' => 'Availability & Accessibility', 'value' => 17],
+                        ['year' => 'Packaging & Design', 'value' => 6],
+                        ['year' => 'Product Variety & Innovation', 'value' => 5],
+                        ['year' => 'Price & Affordability', 'value' => 15],
+                        ['year' => 'Product Quality', 'value' => 25],
+                        ['year' => 'Brand Reputation & Trust', 'value' => 12], 
                     ]
                 ],
                 [
-                    'title' => 'Sports Apparel Market (Men, 2019-2029)',
+                    'title' => 'Preferred Type Of Processed Meat Product',
                     'type' => 'pie', // chart type
                     'data' => [
-                        ['year' => 2019, 'value' => 109.75],
-                        ['year' => 2020, 'value' => 96.91],
-                        ['year' => 2021, 'value' => 112.24],
-                        ['year' => 2022, 'value' => 125.14],
-                        ['year' => 2023, 'value' => 135.69],
-                        ['year' => 2024, 'value' => 146.39],
-                        ['year' => 2029, 'value' => 198.57],
+                        ['year' => 'Cured', 'value' => 5],
+                        ['year' => 'Dried', 'value' => 14],
+                        ['year' => 'Fresh Processed', 'value' => 26],
+                        ['year' => 'Precooked-Cooked', 'value' => 29],
+                        ['year' => 'Raw Fermented Sausages', 'value' => 7],
+                        ['year' => 'Raw Cooked', 'value' => 12],
+                        ['year' => 'Others', 'value' => 6],
                     ]
                 ]
             ];
         else:
                $data = [
                 [
-                    'title' => 'New data ',
+                    'title' => 'Global Automobile Testing Services Market, By Component, CAGR (%), 2025-2033',
                     'type' => 'bar', // chart type
                     'data' => [
-                        ['year' => 2019, 'value' => 109.96],
-                        ['year' => 2020, 'value' => 93.78],
-                        ['year' => 2021, 'value' => 113.58],
-                        ['year' => 2022, 'value' => 127.26],
-                        ['year' => 2023, 'value' => 138.67],
-                        ['year' => 2024, 'value' => 150.36],
-                        ['year' => 2029, 'value' => 209.15],
+                        ['year' => 'Hardware', 'value' => 7.89],
+                        ['year' => 'Software', 'value' => 9.02],
+                        ['year' => 'Services', 'value' => 7.84],
                     ]
                 ],
                 [
-                    'title' => 'New data 2',
+                    'title' => 'Market Share Analysis, By Company, Based on Revenue (2024)',
                     'type' => 'pie', // chart type
                     'data' => [
-                        ['year' => 2019, 'value' => 109.75],
-                        ['year' => 2020, 'value' => 96.91],
-                        ['year' => 2021, 'value' => 112.24],
-                        ['year' => 2022, 'value' => 125.14],
-                        ['year' => 2023, 'value' => 135.69],
-                        ['year' => 2024, 'value' => 146.39],
-                        ['year' => 2029, 'value' => 198.57],
+                        ['year' => 'SGS SA' ,'value' => 14.2],
+                        ['year' => 'DEKAR SE', 'value' => 12.02],
+                        ['year' => 'TUV SUD', 'value' => 10.67],
+                        ['year' => 'Bureua Vertise SA', 'value' => 9.34],
+                        ['year' => 'Intertek Group pic', 'value' => 8.21],
+                        ['year' => 'Applus+ (IDIADA & Automative)', 'value' => 6.70],
+                        ['year' => 'others', 'value' => 38],
                     ]
                 ]
             ];

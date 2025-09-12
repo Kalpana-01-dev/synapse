@@ -21,8 +21,8 @@
             <table class="table table-bordered table-striped">
                 <thead>
                     <tr>
-                        <th>Year</th>
-                        <th>Revenue (USD Billion)</th>
+                        <th>Name</th>
+                        <th>Value</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,14 +47,14 @@
     datasets.forEach((dataset, index) => {
         const labels = dataset.data.map(item => item.year);
         const values = dataset.data.map(item => item.value);
-
+        console.log(dataset);
         // Chart Initialization
         new Chart(document.getElementById(`chart-${index}`), {
             type: dataset.type,
             data: {
                 labels: labels,
                 datasets: [{
-                    label: "Revenue (USD Billion)",
+                    label: dataset.title,
                     data: values,
                     backgroundColor: dataset.type === 'pie'
                         ? ['#4285f4', '#34a853', '#fbbc05', '#ea4335', '#9c27b0', '#00acc1', '#ff5722']
